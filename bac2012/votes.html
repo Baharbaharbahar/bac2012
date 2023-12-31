@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="controle.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="votes.php" method="post">
+        <fieldset>
+            <h1>SAISIE DES VOTES</h1>
+            <label for="">Electeur N°:</label> <input type="text" name="e" id="e">
+            <h1>Les candidats</h1>
+            <h3>Filles</h3>
+            <input type="radio" name="file" id="as"> <label for="">Abbassi Sihem</label> <br>
+            <input type="radio" name="file" id="tm"><label for="">Troudi Meryem </label>
+            <h3>Garcons</h3>
+            <input type="radio" name="garcon" id="bak"> <label for="">Ben abdallah kacem</label> <br>
+            <input type="radio" name="garcon" id="db"><label for=""> Dridi Brahim </label> <br>
+            <input type="submit" value="Voter" onclick="voter()">
+            <input type="reset" value="Annuler">
+        </fieldset>
+    </form>
+</body>
+</html>
